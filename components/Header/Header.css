@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.side {
+    width: 200px;
+    margin: 10px;
+}
+
+.menu a{
+    background: #3d3d3d;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #666;
+    transition: 0.5s all;
+}
+
+.menu a:hover {
+    background: #666;
+}
+
+.menu-list {
+    position: relative;
+}
+
+.menu-drop {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top: 0;
+    opacity: 0;
+}
+
+.menu-list:hover .menu-drop {
+    opacity: 1;
+}
