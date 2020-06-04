@@ -21,13 +21,10 @@ class LocalStorageUtil {
         } else {
             products.splice(index, 1);
         }
-        products.push(id);
+        
         localStorage.setItem(this.keyName, JSON.stringify(products));
 
-        return {
-            pushProduct: pushProduct,
-            products: products
-        }
+        return { pushProduct, products }
     }
 }
 
